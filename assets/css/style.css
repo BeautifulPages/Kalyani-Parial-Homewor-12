@@ -1,0 +1,303 @@
+
+/* ===common css start=== */
+:root {
+    --primaryColor1: #0f2f44;
+    --primaryColor2: #e0e0e0;
+    --primaryColor3:#fff9e6;
+    --primaryColor4:#222222;
+    --commonfonts: "Ubuntu", sans-serif;
+    --textGray: #7e8287;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: var(--commonfonts);
+  }
+  ul,ol{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  body {
+    font-family: var(--fontOpenSans);
+  }
+  h1,h2,h3,h4{
+    margin: 0;
+  }
+  .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+/* ===common css end=== */
+/* ===header part start=== */
+header{
+    background-color: var(--primaryColor1);
+    color: #ffff;
+   
+}
+header .row{
+    justify-content: space-between;
+}
+header span{
+    padding: 20px 0;
+    display: inline-block;
+    line-height:0 ;
+}
+/* ===header part end=== */
+/* ==nav start */
+nav .row{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    display: inline-block;
+} 
+nav ul li a{
+    padding:40px 20px ;
+    color: var(--primaryColor4);
+    display: inline-block;
+    font-size: 16px;
+    font-weight:500 ;
+
+}
+nav ul li a:hover{
+    background-color: var(--primaryColor3);
+    color: var(--primaryColor1);
+    
+    
+}
+nav ul .active{
+    background-color: var(--primaryColor3);
+    color: #ffc712;
+
+}
+nav ul li button{
+   margin: 0 10px; 
+   width: 30px;
+   height: 30px;
+   border: 1px solid #e0e0e0;
+   border-radius:50% ;
+   background-color: transparent;
+   color:#999999;
+   text-align: center;
+   line-height: 30px;
+   cursor: pointer;
+}
+nav ul li button:hover{
+    background-color: var(--primaryColor3);
+    color: var(--primaryColor1);
+ 
+}
+
+/* === */
+
+ /* sub menu-1 start */
+ nav .container .row .parent{
+    position: relative;
+    
+}
+nav .container .row .parent:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    
+}
+nav .container .row .dropdown{
+    /* background-color: rgb(109, 104, 104); */
+    /* padding: 20px 21px; */
+    position: absolute;
+    top:96px;
+    width: 227px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    opacity: 5px;
+
+}
+nav .container .row .dropdown li{
+    width: 100%;
+    
+}
+nav .container .row .dropdown li a{
+    width: 100%;
+    display: block;
+    background-color:var(--primaryColor3);
+    height: 60px;
+    color: var(--primaryColor1);
+    
+
+}
+
+/* sub menu-1 end */
+
+/* sub menu2 start */
+nav .container .row .parent2{
+    position: relative;
+}
+nav .container .row .parent2:hover .dropdown2{
+    visibility: visible;
+    opacity: 1;
+}
+nav .container .row .dropdown2{
+    background-color: rgb(109, 104, 104);
+   /* padding: 20px 21px;  */
+    position: absolute;
+    top: 36px;
+    width: 227px;;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left: 227px;
+
+}
+nav .container .row .dropdown2 li{
+    width: 100%;
+}
+nav .container .row .dropdown2 li a{
+    width: 100%;
+    display: block;
+    background-color: var(--primaryColor3);
+    color: var(--primaryColor1);
+
+}
+/* sub menu2 end */
+/* === */
+
+
+
+
+
+
+
+
+/* ===nav end */
+/* banner part start */
+#banner{
+    background-image: url(../images/Bizzency\ background\ image.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    align-items: center;
+    height: 600px;
+}
+#banner .banner-contains{
+    width: 470px;
+}
+#banner .banner-contains h4{
+    font-size: 50px;
+    font-weight: 400;
+}
+#banner .banner-contains h1{
+    font-size: 80px;
+    font-family: "Abril Fatface", serif; ;
+    text-transform: uppercase;
+}
+#banner .banner-contains p{
+    letter-spacing: 10px;
+    margin: 18px 0;
+    font-size:32px ;
+    color:#8484bf ;
+}
+/* ===know more button part start=== */
+#banner .banner-contains span{
+                font-size: 14px;
+                line-height:24px ;
+                color:#444444 ;
+              
+}
+#banner .banner-contains .btn-group{
+    display: flex;
+    margin-top: 40px;
+}
+#banner .banner-contains .btn-group a{
+    padding: 28px 35px;
+    background-color: #8484bf;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+#banner .banner-contains .btn-group a:hover{
+    color: #f0c331;
+    transition: 2s ;
+    background-color: transparent;
+    box-shadow:15px 10px 30px #ccc ;
+    
+   
+}
+#banner .banner-contains .btn-group img{
+    box-shadow: 15px 10px 30px #ccc;
+    border-radius: 50%;
+}
+/* ===know more button part start=== */
+/* banner part end */
+
+/* ===about part start=== */
+#about{
+    padding: 100px 0;
+}
+
+#about .about-contains{
+    width: 570px;
+    
+}
+#about .about-contains h1{
+    font-size: 48px;
+    font-family:"Abril Fatface", serif; 
+    color: var(--primaryColor1);
+}
+#about .about-contains p{
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color:var(--primaryColor1) ;
+
+}
+#about .about-contains ul{
+    margin-left: 30px;
+
+}
+#about .about-contains ul li{
+    font-size: 16px;
+    line-height: 44px;
+    color: var(--primaryColor1);
+}
+#about .img{
+    margin-top: 50px;
+}
+#about  .btn-group{
+    display: flex;
+    margin-top: 40px;
+}
+#about  .btn-group a{
+    padding: 28px 35px;
+   background-color: transparent;
+   box-shadow:15px 10px 30px #ccc ;
+    color: #0f2f44;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+#about  .btn-group a:hover{
+    color: #0f2f44;
+    transition: 2s ;
+    background-color: #ffc712;
+    font-weight: 500;
+    
+   
+}
+/* ===about part end=== */
